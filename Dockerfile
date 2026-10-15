@@ -7,7 +7,7 @@ FROM node:22-alpine AS assets
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --no-audit --no-fund || npm install --no-audit --no-fund
 
 COPY vite.config.js tailwind.config.js postcss.config.js ./
 COPY resources ./resources
@@ -25,9 +25,11 @@ RUN composer install \
     --no-scripts \
     --no-interaction \
     --prefer-dist \
-    --no-progress
+    --no-progress \
+    --ignore-platform-req=ext-bcmath \
+    --ignore-platform-req=ext-exif
 
-COPY . .
+COPY . . 
 RUN composer dump-autoload --optimize --no-dev
 
 # ---------------------------------------------------------------------------

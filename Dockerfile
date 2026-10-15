@@ -25,7 +25,9 @@ RUN composer install \
     --no-scripts \
     --no-interaction \
     --prefer-dist \
-    --no-progress
+    --no-progress \
+    --ignore-platform-req=ext-bcmath \
+    --ignore-platform-req=ext-exif
 
 COPY . .
 RUN composer dump-autoload --optimize --no-dev

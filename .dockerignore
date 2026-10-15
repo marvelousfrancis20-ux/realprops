@@ -1,0 +1,35 @@
+# Node
+node_modules
+npm-debug.log
+
+# Vite build (rebuilt inside the image)
+public/build
+public/hot
+
+# Laravel
+storage/*.key
+storage/logs/*
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+bootstrap/cache/*.php
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+!.env.docker
+
+# Dev tooling
+.git
+.github
+tests
+phpstan.neon
+pint.json
+node_modules
+.vscode
+.idea
+docker-compose.yml
+docs
+*.md

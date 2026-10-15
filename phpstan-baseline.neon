@@ -1,0 +1,1471 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Controllers/Admin/AgentController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:receivedInquiries\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/Admin/AgentController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Admin\\MasterDataController\:\:fieldOptions\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Http/Controllers/Admin/MasterDataController.php
+
+		-
+			message: '#^PHPDoc tag @var for variable \$query contains generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Http/Controllers/Admin/MasterDataController.php
+
+		-
+			message: '#^Parameter \#1 \$array \(array\{''nullable''\|''required'', ''string'', ''max\:255''\}\) to function array_filter does not contain falsy values, the array will always stay the same\.$#'
+			count: 1
+			path: app/Http/Controllers/Admin/MasterDataController.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between mixed and null will always evaluate to true\.$#'
+			count: 1
+			path: app/Http/Controllers/Admin/MasterDataController.php
+
+		-
+			message: '#^PHPDoc tag @var has invalid value \(array\<string, array\<string, array\{label\: string, type\: string\}\>\)\: Unexpected token "\*/", expected ''\>'' at offset 153 on line 5$#'
+			count: 1
+			path: app/Http/Controllers/Admin/SettingController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Agent\\DashboardController\:\:analytics\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Agent/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Agent\\DashboardController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Agent/DashboardController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:listingLimit\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/Agent/PropertyController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:properties\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/Agent/PropertyController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:approved\(\)\.$#'
+			count: 3
+			path: app/Http/Controllers/AgentPublicController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\AgentPublicController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/AgentPublicController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\AgentPublicController\:\:show\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/AgentPublicController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:attach\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/FavoriteController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:detach\(\)\.$#'
+			count: 2
+			path: app/Http/Controllers/Api/FavoriteController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Api\\FavoriteController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/FavoriteController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Api\\InquiryController\:\:mine\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/InquiryController.php
+
+		-
+			message: '#^Property App\\Http\\Controllers\\Api\\InquiryController\:\:\$repository is never read, only written\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/InquiryController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Api\\PostController\:\:categories\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/PostController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Api\\PostController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/PostController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\Api\\PostController\:\:tags\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/Api/PostController.php
+
+		-
+			message: '#^Parameter \#1 \$user of class Illuminate\\Auth\\Events\\Verified constructor expects Illuminate\\Contracts\\Auth\\MustVerifyEmail, App\\Models\\User\|null given\.$#'
+			count: 1
+			path: app/Http/Controllers/Auth/VerifyEmailController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany\:\:published\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:published\(\)\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\BlogController\:\:category\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\BlogController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\BlogController\:\:show\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\BlogController\:\:tag\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/BlogController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\CompareController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/CompareController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\DashboardController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/DashboardController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\FavoriteController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/FavoriteController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\HomeController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/HomeController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\InquiryController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/InquiryController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PageController\:\:about\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PageController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PageController\:\:faq\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PageController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PageController\:\:privacy\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PageController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PageController\:\:show\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PageController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PageController\:\:terms\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PageController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PropertyController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PropertyController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\PropertyController\:\:show\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/PropertyController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\SavedSearchController\:\:index\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Http/Controllers/SavedSearchController.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AgentResource\:\:\$bio\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AgentResource\:\:\$email\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AgentResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AgentResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AgentResource\:\:\$phone\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\AgentResource\:\:avatarUrl\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\AgentResource\:\:isVerifiedAgent\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/AgentResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AmenityResource\:\:\$icon\.$#'
+			count: 1
+			path: app/Http/Resources/AmenityResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AmenityResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/AmenityResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AmenityResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/AmenityResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\AmenityResource\:\:\$slug\.$#'
+			count: 1
+			path: app/Http/Resources/AmenityResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\CategoryResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\CategoryResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\CategoryResource\:\:\$slug\.$#'
+			count: 1
+			path: app/Http/Resources/CategoryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$alt\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$caption\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$image_url\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$is_cover\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\ImageResource\:\:\$sort_order\.$#'
+			count: 1
+			path: app/Http/Resources/ImageResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$created_at\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$email\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$message\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$phone\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$preferred_tour_date\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$replied_at\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$reply_message\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\InquiryResource\:\:\$status\.$#'
+			count: 1
+			path: app/Http/Resources/InquiryResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$author\.$#'
+			count: 2
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$content\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$published_at\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$slug\.$#'
+			count: 2
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PostResource\:\:\$title\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\PostResource\:\:coverUrl\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\PostResource\:\:excerptText\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/PostResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$address\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$bathrooms\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$bedrooms\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$city\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$country\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$created_at\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$currency\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$description\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$is_approved\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$is_featured\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$latitude\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$listing_type\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$longitude\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$price\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$published_at\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$slug\.$#'
+			count: 2
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$square_meters\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$state\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$status\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$title\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$toilets\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$video_url\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$views_count\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$virtual_tour_url\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyResource\:\:\$year_built\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\PropertyResource\:\:formattedPrice\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Call to an undefined method App\\Http\\Resources\\PropertyResource\:\:imageUrl\(\)\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyTypeResource\:\:\$icon\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyTypeResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyTypeResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyTypeResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyTypeResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyTypeResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\PropertyTypeResource\:\:\$slug\.$#'
+			count: 1
+			path: app/Http/Resources/PropertyTypeResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\TagResource\:\:\$id\.$#'
+			count: 1
+			path: app/Http/Resources/TagResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\TagResource\:\:\$name\.$#'
+			count: 1
+			path: app/Http/Resources/TagResource.php
+
+		-
+			message: '#^Access to an undefined property App\\Http\\Resources\\TagResource\:\:\$slug\.$#'
+			count: 1
+			path: app/Http/Resources/TagResource.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:notify\(\)\.$#'
+			count: 1
+			path: app/Jobs/NotifySavedSearchMatches.php
+
+		-
+			message: '#^Cannot access property \$value on string\.$#'
+			count: 1
+			path: app/Jobs/NotifySavedSearchMatches.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:notify\(\)\.$#'
+			count: 1
+			path: app/Listeners/NotifyAgentOfInquiry.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:notify\(\)\.$#'
+			count: 1
+			path: app/Listeners/NotifyAgentOfPropertyStatus.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:notify\(\)\.$#'
+			count: 1
+			path: app/Listeners/NotifyAgentOfTourRequest.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:notify\(\)\.$#'
+			count: 1
+			path: app/Listeners/NotifyUserOfInquiryReply.php
+
+		-
+			message: '#^Method App\\Livewire\\CompareButton\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/CompareButton.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:attach\(\)\.$#'
+			count: 1
+			path: app/Livewire/FavoriteButton.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Relations\\HasMany\:\:detach\(\)\.$#'
+			count: 1
+			path: app/Livewire/FavoriteButton.php
+
+		-
+			message: '#^Method App\\Livewire\\FavoriteButton\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/FavoriteButton.php
+
+		-
+			message: '#^Method App\\Livewire\\InquiryForm\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/InquiryForm.php
+
+		-
+			message: '#^Method App\\Livewire\\NotificationBell\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/NotificationBell.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyFilters\:\:hydrate\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			count: 1
+			path: app/Livewire/PropertyFilters.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyFilters\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/PropertyFilters.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyFilters\:\:updated\(\) has parameter \$property with no type specified\.$#'
+			count: 1
+			path: app/Livewire/PropertyFilters.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Pagination\\LengthAwarePaginator\:\:getCollection\(\)\.$#'
+			count: 1
+			path: app/Livewire/PropertyList.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyList\:\:applyFilters\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			count: 1
+			path: app/Livewire/PropertyList.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyList\:\:render\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Livewire/PropertyList.php
+
+		-
+			message: '#^Method App\\Livewire\\PropertyList\:\:updated\(\) has parameter \$property with no type specified\.$#'
+			count: 1
+			path: app/Livewire/PropertyList.php
+
+		-
+			message: '#^Strict comparison using \!\=\= between non\-empty\-array\|float\|int\|non\-empty\-string and array\{\} will always evaluate to true\.$#'
+			count: 1
+			path: app/Livewire/PropertyList.php
+
+		-
+			message: '#^Class App\\Models\\AgentProfile uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/AgentProfile.php
+
+		-
+			message: '#^Method App\\Models\\AgentProfile\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/AgentProfile.php
+
+		-
+			message: '#^Method App\\Models\\AgentProfile\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/AgentProfile.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\Amenity\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/Amenity.php
+
+		-
+			message: '#^Class App\\Models\\Amenity uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Amenity.php
+
+		-
+			message: '#^Method App\\Models\\Amenity\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany does not specify its types\: TRelatedModel, TDeclaringModel, TPivotModel, TAccessor \(2\-4 required\)$#'
+			count: 1
+			path: app/Models/Amenity.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\Category\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/Category.php
+
+		-
+			message: '#^Class App\\Models\\Category uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Category.php
+
+		-
+			message: '#^Method App\\Models\\Category\:\:posts\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Category.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\City\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/City.php
+
+		-
+			message: '#^Class App\\Models\\City uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/City.php
+
+		-
+			message: '#^Method App\\Models\\City\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/City.php
+
+		-
+			message: '#^Method App\\Models\\City\:\:state\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/City.php
+
+		-
+			message: '#^Class App\\Models\\ContactMessage uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/ContactMessage.php
+
+		-
+			message: '#^Class App\\Models\\Favorite uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Favorite.php
+
+		-
+			message: '#^Method App\\Models\\Favorite\:\:property\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Favorite.php
+
+		-
+			message: '#^Method App\\Models\\Favorite\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Favorite.php
+
+		-
+			message: '#^Class App\\Models\\Inquiry uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Inquiry.php
+
+		-
+			message: '#^Method App\\Models\\Inquiry\:\:agent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Inquiry.php
+
+		-
+			message: '#^Method App\\Models\\Inquiry\:\:property\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Inquiry.php
+
+		-
+			message: '#^Method App\\Models\\Inquiry\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Inquiry.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\Page\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/Page.php
+
+		-
+			message: '#^Class App\\Models\\Page uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Page.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\Plan\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/Plan.php
+
+		-
+			message: '#^Class App\\Models\\Plan uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Plan.php
+
+		-
+			message: '#^Class App\\Models\\Post uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Method App\\Models\\Post\:\:author\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Method App\\Models\\Post\:\:category\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Method App\\Models\\Post\:\:scopePublished\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Method App\\Models\\Post\:\:scopePublished\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Method App\\Models\\Post\:\:tags\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany does not specify its types\: TRelatedModel, TDeclaringModel, TPivotModel, TAccessor \(2\-4 required\)$#'
+			count: 1
+			path: app/Models/Post.php
+
+		-
+			message: '#^Class App\\Models\\Property uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:agent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:amenities\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany does not specify its types\: TRelatedModel, TDeclaringModel, TPivotModel, TAccessor \(2\-4 required\)$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:city\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:coverImage\(\) should return App\\Models\\PropertyImage\|null but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:favorites\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:galleryUrls\(\) return type has no value type specified in iterable type array\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:images\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:inquiries\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:related\(\) has no return type specified\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeApproved\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeApproved\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeAvailable\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeAvailable\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeFeatured\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeFeatured\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForAgent\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForAgent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForListingType\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForListingType\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForPropertyType\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeForPropertyType\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeInCity\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeInCity\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeInState\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopeInState\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePendingApproval\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePendingApproval\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePriceBetween\(\) has parameter \$max with no type specified\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePriceBetween\(\) has parameter \$min with no type specified\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePriceBetween\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePriceBetween\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePublished\(\) has parameter \$query with generic class Illuminate\\Database\\Eloquent\\Builder but does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:scopePublished\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:tourRequests\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Method App\\Models\\Property\:\:type\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: string, Closure\(App\\Models\\PropertyImage\)\: string given\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>image_url" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			count: 1
+			path: app/Models/Property.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$title\.$#'
+			count: 1
+			path: app/Models/PropertyImage.php
+
+		-
+			message: '#^Class App\\Models\\PropertyImage uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/PropertyImage.php
+
+		-
+			message: '#^Method App\\Models\\PropertyImage\:\:property\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/PropertyImage.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\PropertyType\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/PropertyType.php
+
+		-
+			message: '#^Class App\\Models\\PropertyType uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/PropertyType.php
+
+		-
+			message: '#^Method App\\Models\\PropertyType\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/PropertyType.php
+
+		-
+			message: '#^Class App\\Models\\SavedSearch uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/SavedSearch.php
+
+		-
+			message: '#^Method App\\Models\\SavedSearch\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/SavedSearch.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\State\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/State.php
+
+		-
+			message: '#^Class App\\Models\\State uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/State.php
+
+		-
+			message: '#^Method App\\Models\\State\:\:cities\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/State.php
+
+		-
+			message: '#^Method App\\Models\\State\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/State.php
+
+		-
+			message: '#^Method App\\Models\\Subscription\:\:plan\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/Subscription.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\<static\(App\\Models\\Tag\)\>\:\:withTrashed\(\)\.$#'
+			count: 1
+			path: app/Models/Tag.php
+
+		-
+			message: '#^Class App\\Models\\Tag uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/Tag.php
+
+		-
+			message: '#^Method App\\Models\\Tag\:\:posts\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany does not specify its types\: TRelatedModel, TDeclaringModel, TPivotModel, TAccessor \(2\-4 required\)$#'
+			count: 1
+			path: app/Models/Tag.php
+
+		-
+			message: '#^Class App\\Models\\TourRequest uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			count: 1
+			path: app/Models/TourRequest.php
+
+		-
+			message: '#^Method App\\Models\\TourRequest\:\:agent\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/TourRequest.php
+
+		-
+			message: '#^Method App\\Models\\TourRequest\:\:property\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/TourRequest.php
+
+		-
+			message: '#^Method App\\Models\\TourRequest\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/TourRequest.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$plan\.$#'
+			count: 2
+			path: app/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$verified_at\.$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Call to an undefined method Spatie\\Image\\Drivers\\ImageDriver\:\:nonQueued\(\)\.$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:agentProfile\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:ensureAgentProfile\(\) should return App\\Models\\AgentProfile but returns Illuminate\\Database\\Eloquent\\Model\.$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:favorites\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:inquiries\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:posts\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:properties\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:receivedInquiries\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:savedSearches\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:sentInquiries\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Method App\\Models\\User\:\:tourRequests\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			count: 2
+			path: app/Notifications/InquiryRepliedNotification.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$title\.$#'
+			count: 3
+			path: app/Notifications/InquiryRepliedNotification.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$title\.$#'
+			count: 3
+			path: app/Notifications/NewInquiryNotification.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			count: 2
+			path: app/Notifications/TourRequestNotification.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$title\.$#'
+			count: 3
+			path: app/Notifications/TourRequestNotification.php
+
+		-
+			message: '#^Cannot call method format\(\) on string\.$#'
+			count: 2
+			path: app/Notifications/TourRequestNotification.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\InquiryRepositoryInterface\:\:paginateForAgent\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/InquiryRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\InquiryRepositoryInterface\:\:paginateForUser\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/InquiryRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:byAgent\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:byAgent\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:featured\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:latest\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:mostViewed\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:paginate\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:paginateApproved\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:paginateFeatured\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:query\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Contracts\\PropertyRepositoryInterface\:\:similar\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Contracts/PropertyRepositoryInterface.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\InquiryRepository\:\:paginateForAgent\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/InquiryRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\InquiryRepository\:\:paginateForUser\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/InquiryRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:byAgent\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:byAgent\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:featured\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:latest\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:mostViewed\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:paginate\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:paginateApproved\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:paginateFeatured\(\) return type with generic interface Illuminate\\Contracts\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:query\(\) return type with generic class Illuminate\\Database\\Eloquent\\Builder does not specify its types\: TModel$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\Eloquent\\PropertyRepository\:\:similar\(\) return type with generic class Illuminate\\Support\\Collection does not specify its types\: TKey, TValue$#'
+			count: 1
+			path: app/Repositories/Eloquent/PropertyRepository.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Property\:\:\$total\.$#'
+			count: 1
+			path: app/Services/AnalyticsService.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:map\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: array\{label\: Illuminate\\Support\\Stringable, value\: int\<0, max\>\}, Closure\(App\\Models\\Property\)\: array\{label\: Illuminate\\Support\\Stringable, value\: int\<0, max\>\} given\.$#'
+			count: 1
+			path: app/Services/AnalyticsService.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			count: 1
+			path: app/Services/AnalyticsService.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$plan\.$#'
+			count: 1
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Cannot cast Laravel\\Cashier\\Checkout to string\.$#'
+			count: 1
+			path: app/Services/PaymentService.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$path\.$#'
+			count: 2
+			path: app/Services/PropertyService.php
+
+		-
+			message: '#^Property App\\Models\\Property\:\:\$status \(string\) does not accept App\\Enums\\PropertyStatus\.$#'
+			count: 2
+			path: app/Services/PropertyService.php
+
+		-
+			message: '#^Class Database\\Factories\\AgentProfileFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/AgentProfileFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\AmenityFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/AmenityFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\CategoryFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/CategoryFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\CityFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/CityFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\ContactMessageFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/ContactMessageFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\FavoriteFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/FavoriteFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\InquiryFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/InquiryFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PageFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PageFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PlanFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PlanFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PostFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PostFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PropertyFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PropertyFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PropertyImageFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PropertyImageFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\PropertyTypeFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/PropertyTypeFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\SavedSearchFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/SavedSearchFactory.php
+
+		-
+			message: '#^Call to an undefined method Faker\\Generator\:\:state\(\)\.$#'
+			count: 1
+			path: database/factories/StateFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\StateFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/StateFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\TagFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/TagFactory.php
+
+		-
+			message: '#^Class Database\\Factories\\TourRequestFactory extends generic class Illuminate\\Database\\Eloquent\\Factories\\Factory but does not specify its types\: TModel$#'
+			count: 1
+			path: database/factories/TourRequestFactory.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:each\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: mixed, Closure\(App\\Models\\Post\)\: void given\.$#'
+			count: 1
+			path: database/seeders/BlogSeeder.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Support\\Collection\<int,Illuminate\\Database\\Eloquent\\Model\>\:\:each\(\) expects callable\(Illuminate\\Database\\Eloquent\\Model, int\)\: mixed, Closure\(App\\Models\\Property\)\: void given\.$#'
+			count: 1
+			path: database/seeders/PropertySeeder.php

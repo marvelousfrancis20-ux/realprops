@@ -1,0 +1,326 @@
+{
+  "info": {
+    "name": "Real Props API",
+    "description": "REST API (v1) for the Real Props real-estate platform.\n\nBase URL: {{baseUrl}}/api/v1\n\nPublic endpoints need no auth. Authenticated endpoints require a Sanctum bearer token — run POST /auth/login first; the token is saved automatically to the `{{token}}` variable.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000" },
+    { "key": "token", "value": "" },
+    { "key": "propertyId", "value": "1" },
+    { "key": "userId", "value": "1" },
+    { "key": "postSlug", "value": "" }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{token}}", "type": "string" }]
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const b = pm.response.json();",
+                  "if (b.token) pm.collectionVariables.set('token', b.token);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/register", "host": ["{{baseUrl}}"], "path": ["api", "v1", "register"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\",\n  \"password_confirmation\": \"password123\",\n  \"role\": \"user\",\n  \"phone\": \"+2348000000000\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const b = pm.response.json();",
+                  "if (b.token) pm.collectionVariables.set('token', b.token);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "login"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"admin@realprops.test\",\n  \"password\": \"password\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/logout", "host": ["{{baseUrl}}"], "path": ["api", "v1", "logout"] }
+          }
+        },
+        {
+          "name": "Me (current user)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/me", "host": ["{{baseUrl}}"], "path": ["api", "v1", "me"] }
+          }
+        },
+        {
+          "name": "Update profile",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/me", "host": ["{{baseUrl}}"], "path": ["api", "v1", "me"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jane Doe\",\n  \"phone\": \"+2348000000000\",\n  \"whatsapp\": \"+2348000000000\",\n  \"bio\": \"Looking for a 3-bed in Lekki.\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "item": [
+        {
+          "name": "List properties",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/properties?page=1&per_page=15",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "properties"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "per_page", "value": "15" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Featured properties",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/properties/featured", "host": ["{{baseUrl}}"], "path": ["api", "v1", "properties", "featured"] }
+          }
+        },
+        {
+          "name": "Search properties",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/properties/search?keyword=duplex&listing_type=sale&bedrooms=3&price_min=50000&price_max=500000&state=Lagos&city=Lekki&amenities[]=1&sort=price_asc&per_page=15",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "properties", "search"],
+              "query": [
+                { "key": "keyword", "value": "duplex" },
+                { "key": "listing_type", "value": "sale" },
+                { "key": "property_type", "value": "", "description": "property_types.id", "disabled": true },
+                { "key": "bedrooms", "value": "3" },
+                { "key": "bathrooms", "value": "", "disabled": true },
+                { "key": "price_min", "value": "50000" },
+                { "key": "price_max", "value": "500000" },
+                { "key": "state", "value": "Lagos" },
+                { "key": "city", "value": "Lekki" },
+                { "key": "status", "value": "", "disabled": true },
+                { "key": "amenities[]", "value": "1" },
+                { "key": "sort", "value": "price_asc", "description": "price_asc|price_desc|most_viewed|bedrooms (default newest)" },
+                { "key": "page", "value": "1", "disabled": true },
+                { "key": "per_page", "value": "15" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Show property",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/properties/{{propertyId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "properties", "{{propertyId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Agents",
+      "item": [
+        {
+          "name": "List agents",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/agents?per_page=15",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "agents"],
+              "query": [{ "key": "per_page", "value": "15" }]
+            }
+          }
+        },
+        {
+          "name": "Show agent",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/agents/{{userId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "agents", "{{userId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "item": [
+        {
+          "name": "List posts",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/posts", "host": ["{{baseUrl}}"], "path": ["api", "v1", "posts"] }
+          }
+        },
+        {
+          "name": "Show post",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/posts/{{postSlug}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "posts", "{{postSlug}}"] }
+          }
+        },
+        {
+          "name": "List categories",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/categories", "host": ["{{baseUrl}}"], "path": ["api", "v1", "categories"] }
+          }
+        },
+        {
+          "name": "List tags",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/tags", "host": ["{{baseUrl}}"], "path": ["api", "v1", "tags"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plans",
+      "item": [
+        {
+          "name": "List plans",
+          "request": {
+            "auth": { "type": "noauth" },
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/plans", "host": ["{{baseUrl}}"], "path": ["api", "v1", "plans"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Favorites",
+      "item": [
+        {
+          "name": "List favorites",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/favorites", "host": ["{{baseUrl}}"], "path": ["api", "v1", "favorites"] }
+          }
+        },
+        {
+          "name": "Toggle favorite",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/favorites/{{propertyId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "favorites", "{{propertyId}}"] }
+          }
+        },
+        {
+          "name": "Remove favorite",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/favorites/{{propertyId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "favorites", "{{propertyId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Inquiries & Tours",
+      "item": [
+        {
+          "name": "Send inquiry",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/inquiries", "host": ["{{baseUrl}}"], "path": ["api", "v1", "inquiries"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"property_id\": 1,\n  \"name\": \"Jane Doe\",\n  \"email\": \"jane@example.com\",\n  \"phone\": \"+2348000000000\",\n  \"message\": \"Is this property still available? I would like to schedule a viewing.\",\n  \"preferred_tour_date\": \"2026-11-01\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "My inquiries",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/inquiries", "host": ["{{baseUrl}}"], "path": ["api", "v1", "inquiries"] }
+          }
+        },
+        {
+          "name": "Schedule tour",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/tours/{{propertyId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "tours", "{{propertyId}}"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"scheduled_at\": \"2026-11-01T14:00:00Z\",\n  \"notes\": \"Prefer afternoon viewing.\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
